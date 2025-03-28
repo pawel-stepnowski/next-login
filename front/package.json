@@ -1,0 +1,34 @@
+{
+  "name": "connectico-front",
+  "version": "0.1.0",
+  "private": true,
+  "engineStrict": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-api-client": "nswag openapi2tsclient /input:https://localhost:7175/swagger/v1/swagger.json /output:./src/types/Api.ts /template:Axios"
+  },  
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bootstrap": "^5.3.3",
+    "clsx": "^2.1.1",
+    "next": "15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "sass": "^1.86.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "22.13.11",
+    "@types/react": "19.0.12",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.3",
+    "nswag": "^14.2.0"
+  }
+}

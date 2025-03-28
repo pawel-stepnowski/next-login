@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/back/.vs
+/back/Demo.Api/bin
+/back/Demo.Api/obj
+/back/Demo.BusinessLogic/obj
+/back/Demo.BusinessLogic/bin
+*.user
+/front/.vs
+/.vs

@@ -1,0 +1,79 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/buttons";
+:root
+{
+  --animation-time: 500ms
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: $primary-bg-subtle !important;
+}
+@mixin column-light($color)
+{
+    background: $light;
+    transition: color var(--animation-time) ease-out, background var(--animation-time) ease-out;
+    button
+    {
+        @include button-variant($color, $color);
+    }
+    label
+    {
+        color: $gray-900;
+    }
+    a, h2
+    {
+        color: $color;
+    }
+}
+@mixin column-dark($color)
+{
+    background: $color;
+    transition: color var(--animation-time) ease-out, background var(--animation-time) ease-out;
+    color: $white;
+}
+.column-primary
+{
+    @include column-light($primary);
+}
+.column-primary-dark
+{
+    @include column-dark($primary);
+}
+.column-secondary
+{
+    @include column-light($secondary);
+}
+.column-success
+{
+    @include column-light($success);
+}
+.column-success-dark
+{
+    @include column-dark($success);
+}
+form
+{
+    text-align: start;
+}
+.language-switcher.position-fixed
+{
+    top: 0;
+    right: 0;
+    transition: all 0.3s;
+    @media (max-width: 576px)
+    {
+        position: static !important;
+        margin: 0;
+    }
+}
+@media (max-width: 768px)
+{
+    .login-form.rounded-4
+    {
+        border-radius: 0 !important;
+    }
+}

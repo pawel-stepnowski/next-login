@@ -1,0 +1,22 @@
+:root
+{
+  --animation-time: 0.2s
+}
+@mixin flip-container
+{
+  transition: transform var(--animation-time) ease-out;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: rotateY(var(--rotation));
+}
+.flip-container-front
+{
+    @include flip-container();
+    --rotation: 0deg;
+}
+.flip-container-back
+{
+  @include flip-container();
+  --rotation: 180deg;
+}
