@@ -15,7 +15,7 @@ export default function Page({ params })
     const flip = () => { setRotation(value => value + 1); }
     useEffect(() => { window.history.replaceState(null, '', rotation % 2 === 0 ? "/user/sign-in" : "/user/sign-up"); }, [rotation])
     const element = 
-    <div className={css.centeredContainer} style={{ perspective: "100vh"  }}>
+    <div className={css.centeredContainer} style={{ perspective: "100vh", minHeight: "100vh" }}>
         <FlipContainer rotation={rotation}>
             <SignIn onFlip={flip} />
             <SignUp onFlip={flip} />

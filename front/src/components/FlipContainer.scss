@@ -19,4 +19,5 @@
 {
   @include flip-container();
   --rotation: 180deg;
+  position: absolute;
 }

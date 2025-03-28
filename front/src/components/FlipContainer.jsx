@@ -19,10 +19,10 @@ export function FlipContainer({ rotation, children })
     useEffect(updateCssRotation, [rotation]);
     const element =
     <>
-        <div ref={front} className="flip-container-front" style={{ position: "absolute" }}>
+        <div ref={front} className="flip-container-front">
             {children[0]}
         </div>
-        <div ref={back} className="flip-container-back" style={{ position: "absolute" }}>
+        <div ref={back} className="flip-container-back">
             {children[1]}
         </div>
     </>;

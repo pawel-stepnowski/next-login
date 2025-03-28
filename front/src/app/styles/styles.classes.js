@@ -1,11 +1,11 @@
-export const centeredContainer = 'container d-flex justify-content-center align-items-center vh-100';
+export const centeredContainer = 'container-centered d-flex align-items-lg-center';
 export const columnLight = 'col-md-6 p-5 bg-light'
-export const column = 'col-md-6 p-5 d-flex flex-column justify-content-center text-center'
+export const column = 'col-md-6 p-5 d-flex flex-column justify-content-center text-center p-sm-4'
 export const columnHeader = 'mb-4 text-center';
 export const columnLink = 'text-center mt-3'
 export const columnButton = "btn w-100";
 export const flipButton = "btn btn-light mt-3";
 export const loginForm = "login-form row gx-0 mx-0 shadow-lg rounded-4 overflow-hidden"
 export const buttonLarge = "btn btn-primary btn-lg shadow-sm"
-export const pageContainer = 'container d-flex justify-content-center align-items-center vh-100'
-export const languageSwitcher = 'language-switcher position-fixed p-2 m-2 rounded border'
+export const pageContainer = 'container d-flex justify-content-center align-items-center'
+export const languageSwitcher = 'language-switcher position-absolute p-2 m-2 end-0 rounded border d-none d-md-block'
